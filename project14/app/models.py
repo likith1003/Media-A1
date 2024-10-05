@@ -12,6 +12,7 @@ class Profile(models.Model):
     username = models.CharField(max_length=50)
     password = models.CharField(max_length=50)
     profile_pic = models.ImageField()
+    video = models.FileField()
 
     def __str__(self):
         return self.name
